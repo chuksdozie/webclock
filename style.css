@@ -1,7 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url(./clock\ 2\ bg.jpg);
 }
 
 #parent {
@@ -9,7 +13,6 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
-  background-image: url(./clock\ 2\ bg.jpg);
   background-repeat: none;
   background-position: center;
   background-attachment: fixed;
@@ -33,4 +36,24 @@ h2 {
   text-align: center;
   margin-top: 2px;
   color: yellow;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
 }
