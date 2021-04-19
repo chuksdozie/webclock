@@ -1,5 +1,5 @@
 
-const update = setInterval(mtf, 2000);
+const update = setInterval(mtf, 1000);
 
 function mtf(){
     var mytime = new Date();
